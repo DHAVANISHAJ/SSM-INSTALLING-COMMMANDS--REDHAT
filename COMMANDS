@@ -10,4 +10,6 @@ dnf install -y https://s3.us-east-1.amazonaws.com/amazon-ssm-us-east-1/latest/li
 # Enable and start SSM Agent
 systemctl enable amazon-ssm-agent
 systemctl start amazon-ssm-agent
+systemctl status amazon-ssm-agent
 
+#Make sure DNS Resolution and DNS hostname enabled.
